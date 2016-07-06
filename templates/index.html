@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Song Search</title>
+  </head>
+  <body>
+    <form class="" action="" method="">
+      <input type="text" name="song_name" value="" placeholder="Song Name">
+      <input type="submit" name="" value="Search">
+    </form>
+
+    {% autoescape off %}
+    <ul>
+      {% for link in links %}
+      <li><a href="{{link}}">{{link}}</a></li>
+      {% endfor %}
+    </ul>
+    {% endautoescape %}
+  </body>
+</html>
